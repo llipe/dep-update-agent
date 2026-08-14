@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.python-version
+
+# Node
+node_modules/
+
+# Secrets / local config
+.env
+.env.*
+*.pem
+
+# AgentCore CLI local state
+agentcore/aws-targets.json
+
+# OS
+.DS_Store
