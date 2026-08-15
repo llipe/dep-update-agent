@@ -598,7 +598,7 @@ CMD ["opentelemetry-instrument", "python", "main.py"]
 docker build -t dep-update-agent:local .
 
 docker run --rm -p 8080:8080 \
-  -e AWS_REGION=us-west-2 \
+  -e AWS_REGION=us-east-1 \
   -e GITHUB_SECRET_ID=dep-agent/github-pat \
   -v ~/.aws:/root/.aws:ro \
   dep-update-agent:local
@@ -646,7 +646,7 @@ to exercise the Strands agent.
 
 ```bash
 ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
-REGION=us-west-2
+REGION=us-east-1
 REPO=dep-update-agent
 
 aws ecr create-repository --repository-name $REPO --region $REGION

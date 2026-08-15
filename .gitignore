@@ -12,6 +12,10 @@ node_modules/
 .env.*
 *.pem
 
+# Corporate proxy CA certs — machine-specific, injected at build time
+dependencyUpdateAgent/app/depUpdateAgent/ca/*.crt
+!dependencyUpdateAgent/app/depUpdateAgent/ca/.keep
+
 # AgentCore CLI local state
 agentcore/aws-targets.json
 

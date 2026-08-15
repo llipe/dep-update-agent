@@ -1,0 +1,2 @@
+# Placeholder so the ca/ directory always exists in the Docker build context.
+# Drop corporate proxy CA certs here as *.crt; they are gitignored.
