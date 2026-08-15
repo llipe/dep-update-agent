@@ -24,7 +24,7 @@ Claude is invoked only when tests break — most runs cost nothing.
 
 ## Architecture
 
-```
+```txt
 EventBridge (weekly) → Lambda → AgentCore Runtime (ARM64 container)
                                   │
                                   ├─ clone → audit → update → validate → PR  (deterministic)
