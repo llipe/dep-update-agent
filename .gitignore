@@ -16,8 +16,9 @@ node_modules/
 dependencyUpdateAgent/app/depUpdateAgent/ca/*.crt
 !dependencyUpdateAgent/app/depUpdateAgent/ca/.keep
 
-# AgentCore CLI local state
-agentcore/aws-targets.json
+# AgentCore CLI local state (account-specific, never publish)
+**/agentcore/aws-targets.json
+**/agentcore/.cli/
 
 # OS
 .DS_Store

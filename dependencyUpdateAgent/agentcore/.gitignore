@@ -6,10 +6,7 @@ cdk/cdk.out/
 cdk/node_modules/
 
 # CLI Internals
-.cli/*
+.cli/
 
 # Ephemeral Staging
 .cache/*
-
-# Exception: Commit the State
-!.cli/deployed-state.json
