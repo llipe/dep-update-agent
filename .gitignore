@@ -7,6 +7,10 @@ __pycache__/
 # Node
 node_modules/
 
+# CDK output
+cdk.out/
+dist/
+
 # Secrets / local config
 .env
 .env.*
