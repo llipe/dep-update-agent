@@ -494,6 +494,11 @@ app = BedrockAgentCoreApp()
 def dep_update(payload, context):
     global _workspace
 
+    # The CLI sends the invocation input as a JSON string inside the "prompt" key.
+    # Unwrap it so we can access the actual fields.
+    if "repo_url" not in payload and "prompt" in payload:
+        payload = json.loads(payload["prompt"])
+
     repo_url = payload["repo_url"]
     max_attempts = int(payload.get("max_fix_attempts", 3))
     allow_fixes = bool(payload.get("allow_fixes", True))

@@ -1,6 +1,6 @@
 # AgentCore Runtime requires linux/arm64.
 ARG TARGETPLATFORM=linux/arm64
-FROM --platform=${TARGETPLATFORM} python:3.13-slim-bookworm
+FROM --platform=${TARGETPLATFORM} python:3.13-slim-trixie
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1
